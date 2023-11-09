@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="General.css">
         <script src="https://kit.fontawesome.com/1ec4d7bd68.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <script src="Function.js"></script>
+        
     </head>
     <body>
     <div class="container">
@@ -15,14 +15,18 @@
         <div class="icons">
             <button class="icon-info" onclick="playGame('Rock')">
                 <i class="fa-solid fa-hand-fist"></i></button>
-            <button class="icon-info" onclick="playGame('Paper')">
-                <i class="fa-solid fa-hand"></i></button>
+            <button class="icon-info" onclick="playGame('Paper')"><i class="fa-solid fa-hand"></i>
+                </button>
             <button class="icon-info" onclick="playGame('Scissors')">
-                <i class="fa-solid fa-hand-scissors"></i></button>
+                <i class="fa-solid fa-hand-scissors"></i></button>    
+        </div>
+        <p class="result"></p>
+        <p class="score-board"></p>
+        <p class="moves"></p>
 
-           
-        </dih1v>
+        <button class="reset-button" onclick="reset()">Reset Score</button>
     </div>
+    <script src="Function.js"></script>
     </body>
 </html>
 

@@ -16,11 +16,12 @@ body{
     position: relative;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(241, 231, 231);
     border-radius: 30px;
     height: 500px;
     width: 500px;
     background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px rgba(235, 239, 237, 0.4);
 }
 
 h1{
@@ -33,31 +34,66 @@ h1{
     display: flex;
     gap: 50px;
 }
-button{
+.icon-info{
+    
     height: 100px;
     width: 100px;
     border-radius: 80px;
     border: 2px solid rgb(255, 255, 255);
-    box-shadow: 0px 5px 10px rgba(235, 239, 237, 0.4);
+    box-shadow: 0px 0px 5px 5px rgba(235, 239, 237, 0.4);
     background-color:  rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 5px;
+    color: rgb(195, 204, 70);
+    cursor: pointer;
+    transition:all 0.3s ease;
+    font-size: 40px;
+    
+}
+
+
+ .icon-info:hover{
+    font-size: 60px; 
+    border: 2px solid rgb(195, 204, 70);
+    box-shadow: 0 0 5px 4px rgb(195, 204, 70);
+}
+
+
+.reset-button{
+    position: absolute;
+    bottom :10px;
+    background-color: black;
+    color: rgb(195, 204, 70);
+    border: 2px solid white;
+    border-radius: 10px;
+    transition:all 0.3s ease;
+    cursor: pointer;
+}
+.reset-button:hover{
+    font-size: 15px; 
+    border: 2px solid rgb(195, 204, 70);
+}
+
+.result{
+    
+    position: absolute;
+    top: 120px;
+    font-size: 20px;
     color: rgb(195, 204, 70);
     
-}
-i{
-   font-size: 40px;
-   color: rgb(195, 204, 70);
-   ;
-   cursor: pointer;
-   transition:all 0.3s ease;
-}
-
-i:hover{
-   
-        font-size: 60px; 
     
 }
-
+.score-board{
+    color: rgb(195, 204, 70);
+    position: absolute;
+    bottom: 110px;
+    font-size: 20px;
+}
+.moves{
+    position: absolute;
+    bottom: 60px;
+    color: rgb(195, 204, 70);
+}
