@@ -17,6 +17,27 @@ updateFunction();
 //     }
 //  }
 
+let isAutoPlaying = false;
+let intervalID;
+function autoPlay(){
+    if(!isAutoPlaying){
+        document.querySelector(".auto-play").innerHTML=`Stop`;
+        intervalID =setInterval(function(){
+            const playerMove = pickComputerMove();
+            playGame(playerMove);
+        },2000);
+        isAutoPlaying = true;
+     }else{
+        document.querySelector(".auto-play").innerHTML=`Auto Play`;
+        clearInterval(intervalID);
+        isAutoPlaying = false;
+     }
+      
+}
+
+
+
+
 function playGame(playerMove){
 
    
