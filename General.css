@@ -62,7 +62,7 @@ h1{
 }
 
 
-.reset-button{
+.reset-button, .auto-play{
     position: absolute;
     bottom :10px;
     background-color: black;
@@ -72,11 +72,18 @@ h1{
     transition:all 0.3s ease;
     cursor: pointer;
 }
-.reset-button:hover{
+.auto-play{
+    bottom: 40px;
+}
+.auto-play:hover{
     font-size: 15px; 
     border: 2px solid rgb(195, 204, 70);
 }
 
+.reset-button:hover{
+    font-size: 15px; 
+    border: 2px solid rgb(195, 204, 70);
+}
 .result{
     
     position: absolute;
@@ -94,6 +101,6 @@ h1{
 }
 .moves{
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     color: rgb(195, 204, 70);
 }
